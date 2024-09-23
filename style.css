@@ -1,0 +1,54 @@
+body {
+    margin: 0; /* Убираем отступы по умолчанию */
+}
+
+header {
+    background-image: url('oboy.jpg'); /* Замените 'your-wallpaper.jpg' на путь к изображению */
+    background-size: cover; /* Покрывает всю область заголовка */
+    background-position: center; /* Выравнивает фон по центру */
+    background-repeat: no-repeat; /* Не повторяет фон */
+    position: relative; /* Позиционируем заголовок относительно себя */
+    width: 100%; /* Заголовок занимает всю ширину */
+    height: 100vh; /* Заголовок занимает всю высоту viewport'а */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: black; /* Черный фон для контейнера */
+    opacity: 0.75; /* Полупрозрачность */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px; /* Скругление углов контейнера */
+}
+
+img {
+    width: 50px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: border-radius 0.5s ease; /* Добавлено: плавная анимация для скругления */
+}
+
+nav a:hover {
+    border-radius: 20px; /* Добавлено: скругление при наведении */
+    background-color: white; /* Добавлено: белый фон при наведении */
+    color: black; /* Добавлено: черный текст при наведении */
+}
